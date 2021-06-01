@@ -1,7 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 let quizQestions = [
   {
     question: "מהו ההר הגבוה בעולם",
+    id: '28789',
     answerAll: [{
       text: 'חרמון',
       num: 10,
@@ -33,6 +34,7 @@ let quizQestions = [
 
 let randomNumber = 0;
 
+
 function QuizBox() {
   const [answers, setanswers] = useState(quizQestions[Math.floor(Math.random() * quizQestions.length)]);
 
@@ -50,11 +52,11 @@ function QuizBox() {
 
 
   function checkAnswer(elm) {
-  //   if (elm === answers.answer) {
-  //     console.log(true)
-  //   } else {
-  //     console.log(false)
-  //   }
+    //   if (elm === answers.answer) {
+    //     console.log(true)
+    //   } else {
+    //     console.log(false)
+    //   }
   }
 
   return (

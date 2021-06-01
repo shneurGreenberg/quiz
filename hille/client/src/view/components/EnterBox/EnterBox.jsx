@@ -4,7 +4,9 @@ import Button from "../Button/Btn"
 
 
 
+
 function EnterBox() {
+
     return (
         <div className="enterBox"> hello hillel lets start...
             <Button ButtonName="START" action="/quiz" />
